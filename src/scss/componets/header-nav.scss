@@ -1,25 +1,18 @@
 .header-nav{
 	display: flex;
-	overflow: hidden;
-	ul{
+	align-items: center;
+	&__ul{
 		margin: 0;
+		padding: 0;
 		list-style: none;
-		display: flex;
+		display: inline-block;
 		align-items: center;
-		border-right: 1px solid rgba(0, 0, 0, 0.12);
-		padding: 0 24px;
-		&:first-of-type{
-			padding-left: 0;
-		}
-		&:last-of-type{
-			border-right: none;
-		}
 		&.active{
 			display: block;
 		}
 		li{
-			&:first-of-type{
-			}
+			display: inline-block;
+			padding: 0 12px;
 			a{
 				font-weight: bold;
 				font-size: 12px;
@@ -29,9 +22,58 @@
 				color: #333333;
 				white-space: nowrap;
 				text-decoration: none;
-				padding: 0 12px;
 				&:hover{
 					transition: all .3s ease;
+					opacity: .7;
+				}
+			}
+		}
+	}
+	&__group{
+		display: inline-block;
+		border-right: 1px solid rgba(0, 0, 0, 0.12);
+		&:first-of-type{
+			padding-left: 0;
+		}
+		&:last-of-type{
+			border-right: none;
+		}
+	}
+	&__dropdown-toggle{
+		background-color: transparent;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 20px;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: #333333;
+		border: none;
+	}
+	&__dropdown{
+		position: absolute;
+		top: 10px;
+		right: 0;
+		z-index: 15;
+		background-color: #fff;
+		padding: 16px;
+		box-shadow: 0 0 16px rgba(#0b1b55, .3);
+		li{
+			display: block;
+			margin-bottom: 12px;
+			&:last-of-type{
+				margin-bottom: 0;
+			}
+			a{
+				font-weight: 700;
+				font-size: 12px;
+				line-height: 20px;
+				letter-spacing: .03em;
+				text-transform: uppercase;
+				color: #333;
+				white-space: nowrap;
+				text-decoration: none;
+				&:hover{
 					opacity: .7;
 				}
 			}

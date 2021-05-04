@@ -1,7 +1,14 @@
 @@include('./partials/jquery.min.js')
+@@include('./partials/priority-nav.js')
 
 
 $(function () {
+
+    var nav = priorityNav.init({
+        navDropdownLabel: "еще",
+        navDropdownClassName: "header-nav__dropdown",
+        navDropdownToggleClassName: "header-nav__dropdown-toggle",
+    });
 
     $('.js-catalog-open').on('click', function (){
         $('.mob-nav').addClass('active');

@@ -1,4 +1,5 @@
 @import 'partials/normalize';
+@import 'partials/priority-nav-core';
 @import 'mixin';
 @import 'fonts';
 @import 'icon';
@@ -18,7 +19,6 @@ body {
 }
 
 .wrp {
-	overflow: hidden;
 }
 .wrapper {
 	margin: 0 auto;
