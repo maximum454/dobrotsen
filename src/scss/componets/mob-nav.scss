@@ -99,7 +99,7 @@
 		left: -16px;
 		width: calc(100% + 32px);
 		height: 53px;
-		font-size: 12px;
+		font-size: 16px;
 		line-height: 20px;
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
@@ -109,6 +109,7 @@
 		padding: 16px;
 		margin-bottom: 17px;
 		cursor: pointer;
+		font-weight: 700;
 		&:after{
 			content: '';
 			position: absolute;
