@@ -1,0 +1,33 @@
+.mob-catalog{
+	&__header{
+		background: #FFFFFF;
+		position: relative;
+		height: 56px;
+		display: flex;
+		align-items: center;
+	}
+	&__prev {
+		display: block;
+		width: 20px;
+		height: 20px;
+		background-image: url(../img/icon-prev.svg);
+		background-size: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-right: 20px;
+	}
+	&__form{
+		position: relative;
+	}
+	.btn-search{
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-image: url("../img/search.svg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center;
+		width: 22px;
+		height: 22px;
+	}
+}

@@ -1692,6 +1692,45 @@ body.lock {
   color: #828282;
 }
 
+.mob-catalog__header {
+  background: #FFFFFF;
+  position: relative;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mob-catalog__prev {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icon-prev.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+
+.mob-catalog__form {
+  position: relative;
+}
+
+.mob-catalog .btn-search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 22px;
+  height: 22px;
+}
+
 @media only screen and (max-width: 1023px) {
   .wrapper {
     padding: 0 16px;
