@@ -1595,6 +1595,106 @@ body.lock {
           justify-content: center;
 }
 
+.mob-nav__footer {
+  position: relative;
+}
+
+.mob-nav__feedback-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #333333;
+  border: 1px solid #EB292F;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  height: 32px;
+  max-width: 150px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.mob-nav__phone {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #333333;
+  margin-bottom: 4px;
+  text-decoration: none;
+  display: block;
+}
+
+.mob-nav__work {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+  margin-bottom: 12px;
+}
+
+.mob-nav__email {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2468AC;
+  margin-bottom: 12px;
+  display: block;
+  text-decoration: none;
+}
+
+.mob-nav__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mob-nav__social-item {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.mob-nav__social-item:last-of-type {
+  margin-right: 0;
+}
+
+.mob-nav__social-item.inst {
+  background-image: url("../img/instagram.svg");
+}
+
+.mob-nav__social-item.ok {
+  background-image: url("../img/ok.svg");
+}
+
+.mob-nav__social-item.vk {
+  background-image: url("../img/vk.svg");
+}
+
 @media only screen and (max-width: 1023px) {
   .wrapper {
     padding: 0 16px;

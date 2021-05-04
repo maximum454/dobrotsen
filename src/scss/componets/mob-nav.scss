@@ -161,4 +161,83 @@
 		align-items: center;
 		justify-content: center;
 	}
+	&__footer{
+		position: relative;
+	}
+	&__feedback-btn{
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 20px;
+		text-align: center;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: #333333;
+		border: 1px solid #EB292F;
+		box-sizing: border-box;
+		border-radius: 2px;
+		height: 32px;
+		max-width: 150px;
+		width: 100%;
+		text-decoration: none;
+	}
+	&__phone{
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 28px;
+		color: #333333;
+		margin-bottom: 4px;
+		text-decoration: none;
+		display: block;
+	}
+	&__work{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 20px;
+		color: #828282;
+		margin-bottom: 12px;
+	}
+	&__email{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 20px;
+		color: #2468AC;
+		margin-bottom: 12px;
+		display: block;
+		text-decoration: none;
+	}
+	&__social{
+		display: flex;
+		align-items: center;
+
+	}
+	&__social-item{
+		width: 24px;
+		height: 24px;
+		margin-right: 12px;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center;
+		border-radius: 4px;
+		&:last-of-type{
+			margin-right: 0;
+		}
+		&.inst{
+			background-image: url("../img/instagram.svg");
+		}
+		&.ok{
+			background-image: url("../img/ok.svg");
+		}
+		&.vk{
+			background-image: url("../img/vk.svg");
+		}
+	}
 }
