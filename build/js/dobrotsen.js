@@ -7,4 +7,23 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 
 $(function () {
 
+    $('.js-catalog-open').on('click', function (){
+        $('.mob-nav').addClass('active');
+    })
+    $('.js-mob-nav-close').on('click', function (){
+        $('.mob-nav').removeClass('active');
+    })
+
+    $('.js-mob-nav-catalog').on('click', function (){
+        $('.mob-catalog').addClass('active');
+    })
+
+    $('.js-mob-nav-prev').on('click', function (){
+        $('.mob-catalog').removeClass('active');
+    })
+
 })
+
+
+
+
