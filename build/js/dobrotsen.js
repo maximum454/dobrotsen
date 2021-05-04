@@ -735,7 +735,7 @@ $(function () {
         navDropdownToggleClassName: "header-nav__dropdown-toggle",
     });
 
-    $('.js-catalog-open').on('click', function (){
+    $('.js-catalog-menu').on('click', function (){
         $('.mob-nav').addClass('active');
     })
     $('.js-mob-nav-close').on('click', function (){
