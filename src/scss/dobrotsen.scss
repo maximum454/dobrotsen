@@ -57,9 +57,24 @@ body {
 	width: 100%;
 }
 
+.bordered-btn {
+	line-height: 42px;
+	background: #F7F7F7;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	border-radius: 2px;
+	display: inline-block;
+	padding: 0 16px;
+	height: 40px;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
 //Шапка
 @import "componets/header";
 
 //Главная навигация
-@import "componets/nav";
+@import "componets/header-nav";
+
+//Поиск в шапке
+@import "componets/search";
 

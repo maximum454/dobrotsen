@@ -1,0 +1,39 @@
+.header-nav{
+	display: flex;
+	ul{
+		margin: 0;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		border-right: 1px solid rgba(0, 0, 0, 0.12);
+		padding: 0 24px;
+		&:first-of-type{
+			padding-left: 0;
+		}
+		&:last-of-type{
+			border-right: none;
+		}
+		&.active{
+			display: block;
+		}
+		li{
+			&:first-of-type{
+			}
+			a{
+				font-weight: bold;
+				font-size: 12px;
+				line-height: 20px;
+				letter-spacing: 0.03em;
+				text-transform: uppercase;
+				color: #333333;
+				white-space: nowrap;
+				text-decoration: none;
+				padding: 0 12px;
+				&:hover{
+					transition: all .3s ease;
+					opacity: .7;
+				}
+			}
+		}
+	}
+}
