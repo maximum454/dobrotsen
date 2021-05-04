@@ -1,60 +1,69 @@
 .icon{
   display: inline-block;
   position: relative;
-  margin-right: 14px;
-  width: 24px;
-  height: 24px;
+  margin-right: 10px;
+  width: 22px;
+  height: 22px;
   vertical-align: middle;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
 }
-.icon-empire {
-  background-image: url("../img/icons-sprite.svg#empire");
-}
 
-.icon-burger-light {
-  background-image: url("../img/icons-sprite.svg#icon-burger-light");
-}
-.icon-burger-dark {
-  background-image: url("../img/icons-sprite.svg#icon-burger-dark");
-}
 .icon-login{
-  background-image: url("../img/icons-sprite.svg#login");
+  background-image: url(../img/login.svg);
 }
-.icon-city{
-  background-image: url("../img/icons-sprite.svg#icon-city-cart-light");
-}
-.icon-checkmark{
-  background-image: url("../img/icons-sprite.svg#checkmark");
-  width: 40px;
-  height: 40px;
+.icon-favorite{
+  background-image: url(../img/favorite-black.svg);
 }
 
-.icon-time{
-  width: 21px;
-  height: 21px;
-  margin-right: 10px;
-  background-image: url("../img/icons-sprite.svg#time");
+.icon-cereals{
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/menu-sprite.svg#icon-cereals);
 }
-
-.icon-email{
-  background-image: url("../img/icons-sprite.svg#email");
+.icon-fish{
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/menu-sprite.svg#icon-fish);
 }
-
-.icon-slider-arrow-light{
-  background-image: url("../img/icons-sprite.svg#slider-arrow-light");
+.icon-fruct{
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/menu-sprite.svg#icon-fruct);
 }
-
-.icon-stock{
-  background-image: url("../img/icons-sprite.svg#stock");
+.icon-hleb{
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/menu-sprite.svg#icon-hleb);
 }
-.icon-anticrisis{
-  background-image: url("../img/icons-sprite.svg#anticrisis");
+.icon-jam{
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/menu-sprite.svg#icon-jam);
 }
-.icon-delivery{
-  background-image: url("../img/icons-sprite.svg#delivery");
+.icon-milk{
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/menu-sprite.svg#icon-milk);
 }
-.icon-basket-btn{
-  background-image: url("../img/icons-sprite.svg#basket-btn");
+.icon-myaso{
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/menu-sprite.svg#icon-myaso);
+}
+.icon-sous{
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/menu-sprite.svg#icon-sous);
+}
+.icon-tea{
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/menu-sprite.svg#icon-tea);
+}
+.icon-water{
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/menu-sprite.svg#icon-water);
 }
