@@ -1345,10 +1345,6 @@ body.lock {
   position: relative;
 }
 
-.mob-nav {
-  max-width: 375px;
-}
-
 .mob-nav__header {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.12);
@@ -1363,12 +1359,12 @@ body.lock {
           align-items: center;
 }
 
-.mob-nav__menu {
+.mob-nav__close {
   display: block;
-  width: 34px;
-  height: 34px;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEycHgiPjxnPjxwYXRoIGQ9Im0yNTYgMGMtMTQxLjE2NDA2MiAwLTI1NiAxMTQuODM1OTM4LTI1NiAyNTZzMTE0LjgzNTkzOCAyNTYgMjU2IDI1NiAyNTYtMTE0LjgzNTkzOCAyNTYtMjU2LTExNC44MzU5MzgtMjU2LTI1Ni0yNTZ6bTg1LjMzMjAzMSAzNjIuNjY3OTY5aC0xNzAuNjY0MDYyYy0xMS43NzczNDQgMC0yMS4zMzU5MzgtOS41NTg1OTQtMjEuMzM1OTM4LTIxLjMzNTkzOCAwLTExLjc3MzQzNyA5LjU1ODU5NC0yMS4zMzIwMzEgMjEuMzM1OTM4LTIxLjMzMjAzMWgxNzAuNjY0MDYyYzExLjc3NzM0NCAwIDIxLjMzNTkzOCA5LjU1ODU5NCAyMS4zMzU5MzggMjEuMzMyMDMxIDAgMTEuNzc3MzQ0LTkuNTU4NTk0IDIxLjMzNTkzOC0yMS4zMzU5MzggMjEuMzM1OTM4em0wLTg1LjMzNTkzOGgtMTcwLjY2NDA2MmMtMTEuNzc3MzQ0IDAtMjEuMzM1OTM4LTkuNTU0Njg3LTIxLjMzNTkzOC0yMS4zMzIwMzFzOS41NTg1OTQtMjEuMzMyMDMxIDIxLjMzNTkzOC0yMS4zMzIwMzFoMTcwLjY2NDA2MmMxMS43NzczNDQgMCAyMS4zMzU5MzggOS41NTQ2ODcgMjEuMzM1OTM4IDIxLjMzMjAzMXMtOS41NTg1OTQgMjEuMzMyMDMxLTIxLjMzNTkzOCAyMS4zMzIwMzF6bTAtODUuMzMyMDMxaC0xNzAuNjY0MDYyYy0xMS43NzczNDQgMC0yMS4zMzU5MzgtOS41NTg1OTQtMjEuMzM1OTM4LTIxLjMzMjAzMSAwLTExLjc3NzM0NCA5LjU1ODU5NC0yMS4zMzU5MzggMjEuMzM1OTM4LTIxLjMzNTkzOGgxNzAuNjY0MDYyYzExLjc3NzM0NCAwIDIxLjMzNTkzOCA5LjU1ODU5NCAyMS4zMzU5MzggMjEuMzM1OTM4IDAgMTEuNzczNDM3LTkuNTU4NTk0IDIxLjMzMjAzMS0yMS4zMzU5MzggMjEuMzMyMDMxem0wIDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgZGF0YS1vbGRfY29sb3I9IiMwMDAwMDAiIGZpbGw9IiNFQjI5MkYiLz48L2c+IDwvc3ZnPg==);
-  background-size: 34px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icon-close.svg);
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   margin-right: 20px;
@@ -1403,7 +1399,6 @@ body.lock {
   font-size: 16px;
   line-height: 20px;
   color: #333333;
-  margin-bottom: 20px;
   position: relative;
   padding-left: 25px;
 }
@@ -1432,6 +1427,7 @@ body.lock {
   font-size: 16px;
   line-height: 20px;
   color: #333333;
+  margin-top: 20px;
 }
 
 .mob-nav__btn-change {
@@ -1464,6 +1460,7 @@ body.lock {
           align-items: center;
   padding: 16px;
   margin-bottom: 17px;
+  cursor: pointer;
 }
 
 .mob-nav__catalog-btn:after {
