@@ -25,6 +25,9 @@ body {
 	max-width: 1440px;
 	padding: 0 52px;
 	width: 100%;
+	@include r(1023){
+		padding: 0 16px;
+	}
 }
 
 .d-none {
@@ -80,4 +83,7 @@ body {
 
 //Мобильная шапка
 @import "componets/mob-header";
+
+//Мобильная навигация
+@import "componets/mob-nav";
 
