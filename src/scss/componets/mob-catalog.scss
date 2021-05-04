@@ -64,7 +64,7 @@
 				text-transform: uppercase;
 				color: #333333;
 				text-decoration: none;
-				padding: 20px 20px 20px 0;
+				padding: 20px 20px 20px 38px;
 				position: relative;
 				&:after{
 					content: '';
@@ -85,10 +85,14 @@
 					line-height: 20px;
 					color: #828282;
 					text-transform: none;
-					padding-left: 42px;
+				}
+				.icon{
+					position: absolute;
+					left: 0;
 				}
 			}
 		}
+
 	}
 	.form-control{
 		padding: 9px 10px 9px 45px;
@@ -105,5 +109,8 @@
 		background-position: center;
 		width: 22px;
 		height: 22px;
+	}
+	@include r(319){
+
 	}
 }

@@ -608,7 +608,7 @@ template {
 .icon {
   display: inline-block;
   position: relative;
-  margin-right: 14px;
+  margin-right: 10px;
   width: 22px;
   height: 22px;
   vertical-align: middle;
@@ -1948,7 +1948,7 @@ body.lock {
   text-transform: uppercase;
   color: #333333;
   text-decoration: none;
-  padding: 20px 20px 20px 0;
+  padding: 20px 20px 20px 38px;
   position: relative;
 }
 
@@ -1974,7 +1974,11 @@ body.lock {
   line-height: 20px;
   color: #828282;
   text-transform: none;
-  padding-left: 42px;
+}
+
+.mob-catalog__ul li a .icon {
+  position: absolute;
+  left: 0;
 }
 
 .mob-catalog .form-control {
