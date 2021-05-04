@@ -18,6 +18,8 @@
 		background-repeat: no-repeat;
 		margin-right: 20px;
 	}
+	&__main{
+	}
 	&__logotip{
 		height: 44px;
 		padding: 0;
@@ -148,8 +150,9 @@
 	}
 	&__count{
 		position: absolute;
-		top: 0;
+		top: 50%;
 		right: 0;
+		margin-top: -16px;
 		width: 32px;
 		height: 32px;
 		font-size: 16px;
@@ -163,10 +166,11 @@
 	}
 	&__footer{
 		position: relative;
+		padding: 20px 0;
 	}
 	&__feedback-btn{
 		position: absolute;
-		top: 0;
+		top: 20px;
 		right: 0;
 		display: flex;
 		align-items: center;
@@ -238,6 +242,41 @@
 		}
 		&.vk{
 			background-image: url("../img/vk.svg");
+		}
+	}
+	&__auth{
+		position: relative;
+		margin: -29px 0 0;
+		padding: 0;
+		list-style: none;
+		left: -16px;
+		width: calc(100% + 32px);
+		li {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background: #F6F6F6;
+			height: 48px;
+			padding: 16px;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+			&:first-child{
+				border-top: 1px solid rgba(0, 0, 0, 0.12);
+			}
+			a{
+				font-style: normal;
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 20px;
+				text-decoration-line: underline;
+				color: #333333;
+			}
+		}
+		span{
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 20px;
+			text-align: right;
+			color: #828282;
 		}
 	}
 }
