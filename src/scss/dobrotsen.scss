@@ -71,6 +71,9 @@ body {
 	white-space: nowrap;
 	cursor: pointer;
 }
+.text-danger{
+	color: #EB292F;
+}
 
 //Шапка
 @import "componets/header";
@@ -89,4 +92,7 @@ body {
 
 //Мобильный каталог в меню
 @import "componets/mob-catalog";
+
+//Ваш заказ
+@import "componets/our-order-basket";
 

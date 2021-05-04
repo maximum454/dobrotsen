@@ -1,0 +1,147 @@
+.our-order-basket {
+  width: 553px;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  padding: 16px 16px 0;
+  box-shadow: 0px 6px 16px rgba(11, 27, 85, 0.15);
+  border-radius: 4px;
+  z-index: 10;
+  font-family: $font1;
+
+  &__close {
+    position: absolute;
+    top: 25px;
+    right: 16px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    background-image: url(../img/icon-close.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  &__header {
+    position: relative;
+    padding-bottom: 16px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: calc(100% + 32px);
+      margin-left: -16px;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.12);
+    }
+
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+    margin-bottom: 4px;
+  }
+
+  &__anons {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    color: #333333;
+  }
+
+  &__footer {
+    padding: 12px 16px;
+    width: calc(100% + 32px);
+    margin-left: -16px;
+  }
+
+  &__btn {
+    font-family: $font1;
+    width: 100%;
+    border: none;
+    background-color: #EB292E;
+    padding: 10px 44px;
+    opacity: 0.4;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #333333;
+    margin-top: 8px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    max-width: 180px;
+  }
+
+  &__count {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #333333;
+  }
+
+  &__delete {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    border: none;
+    background-image: url(../img/icon-close.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .warning {
+    background: #FFE8E9;
+  }
+}
