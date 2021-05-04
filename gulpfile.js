@@ -133,18 +133,18 @@ function images() {
 }
 
 gulp.task('svgSprite', function () {
-    return gulp.src([source + '/iconsprite/icon/*.svg'])
+    return gulp.src([source + '/iconsprite/menu/*.svg'])
         .pipe(
             svgSprite({
                 mode: {
                     stack: {
-                        sprite: '../icons/icons-sprite.svg',
-                        example: true,
+                        sprite: '../icons/menu-sprite.svg',
+                        example: false,
                     },
                     css: { // Create a «css» sprite
-                        sprite: '../icon/icons-sprite.svg',
+                        sprite: '../menu/menu-sprite.svg',
                         render: {
-                            scss: true
+                            scss: false
                         }
                     }
                 },
@@ -152,6 +152,7 @@ gulp.task('svgSprite', function () {
         )
         .pipe(dest(path.build.img))
 });
+
 gulp.task('svgSocialSprite', function () {
     return gulp.src([source + '/iconsprite/social/*.svg'])
         .pipe(
