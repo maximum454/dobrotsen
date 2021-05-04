@@ -1,0 +1,60 @@
+.remodal{
+	.remodal-close{
+		right: 22px;
+		top: 24px;
+		left: auto;
+		background-image: url("../img/icons-sprite.svg#close");
+		width: 14px;
+		height: 14px;
+		&:before{
+			display: none;
+		}
+	}
+
+	&.delivery{
+		background: #FFFFFF;
+		box-shadow: 0px 4px 14px rgba(50, 76, 154, 0.25);
+		border-radius: 4px;
+		max-width: 370px;
+		padding: 24px 24px 10px;
+		.title{
+			font-style: normal;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 28px;
+			color: #000000;
+			text-align: left;
+		}
+		.select{
+			width: 100%;
+			margin: 24px 0;
+		}
+		.jq-selectbox li{
+			text-align: left;
+		}
+		.jq-selectbox__select{
+			height: 44px;
+			line-height: 44px;
+			background: #FFFFFF;
+			border: 1px solid rgba(1, 14, 61, 0.32);
+			box-sizing: border-box;
+			border-radius: 4px;
+		}
+		.jq-selectbox__select-text{
+			text-align: left;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 15px;
+			color: #333333;
+		}
+		.jq-selectbox__trigger{
+			border-left: none;
+		}
+		.jq-selectbox__trigger-arrow{
+			top: 20px;
+			border-top: 5px solid #000;
+			border-right: 3px solid transparent;
+			border-left: 3px solid transparent;
+		}
+	}
+}

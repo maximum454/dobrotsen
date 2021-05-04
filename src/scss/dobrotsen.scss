@@ -1,0 +1,65 @@
+@import 'partials/normalize';
+@import 'mixin';
+@import 'fonts';
+@import 'icon';
+@import 'buttons';
+@import 'form';
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	font-family: $font1;
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+.wrp {
+	overflow: hidden;
+}
+.wrapper {
+	margin: 0 auto;
+	max-width: 1440px;
+	padding: 0 52px;
+	width: 100%;
+}
+
+.d-none {
+	display: none;
+}
+
+.d-desktop-none {
+	display: none;
+	@include r(767) {
+		display: block;
+	}
+}
+
+.d-mobile-none {
+	display: block;
+	@include r(767) {
+		display: none !important;
+	}
+}
+
+.container {
+	max-width: 1392px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.w100 {
+	width: 100%;
+}
+
+//Шапка
+@import "componets/header";
+
+//Главная навигация
+@import "componets/nav";
+

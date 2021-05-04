@@ -1,0 +1,31 @@
+.form-control {
+	display: block;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 15px;
+	line-height: 20px;
+	color: #A4A9BB;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #DDE8F4;
+	border-radius: 4px;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.form-control-plaintext {
+	display: block;
+	width: 100%;
+	padding-top: .375rem;
+	padding-bottom: .375rem;
+	margin-bottom: 0;
+	line-height: 1.5;
+	background-color: transparent;
+	border: solid transparent;
+	border-width: 1px 0;
+	border-bottom: 1px solid rgba(68, 121, 163, 0.12);
+	&:placeholder{
+		color: #A4A9BB;
+	}
+}
