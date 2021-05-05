@@ -2,6 +2,7 @@
 	width: 553px;
 	position: absolute;
 	right: 0;
+	top: 45px;
 	background-color: #fff;
 	padding: 16px 16px 0;
 	box-shadow: 0px 6px 16px rgba(11, 27, 85, 0.15);
@@ -69,14 +70,19 @@
 		width: calc(100% + 32px);
 		margin-left: -16px;
 	}
-
+	&__txt{
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 20px;
+		color: #333333;
+	}
 	&__btn {
 		font-family: $font1;
 		width: 100%;
 		border: none;
 		background-color: #EB292E;
 		padding: 10px 44px;
-		opacity: 0.4;
 		border-radius: 2px;
 		font-weight: bold;
 		font-size: 20px;
@@ -85,6 +91,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		&.disabled{
+			pointer-events: none;
+			opacity: 0.4;
+		}
 	}
 
 	&__info {
@@ -97,7 +107,6 @@
 
 	&__row {
 		display: flex;
-		align-items: center;
 		justify-content: space-between;
 		margin-bottom: 12px;
 		position: relative;
@@ -130,6 +139,9 @@
 		line-height: 20px;
 		color: #828282;
 		margin-left: 12px;
+		&-order{
+			flex-shrink: 0;
+		}
 	}
 	&__img{
 		flex-shrink: 0;
