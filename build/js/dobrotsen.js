@@ -751,7 +751,7 @@ $(function () {
     })
 
 
-    $('.basket-header-btn').on('click', function (){
+    $('.js-header-basket').on('click', function (){
         $('.our-order-basket').toggleClass('active');
     })
     $('.our-order-basket__close').on('click', function (){
