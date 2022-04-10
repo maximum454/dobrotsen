@@ -1,4 +1,4 @@
-let name_project = 'dobrotsen';
+let name_project = 'main-page';
 let project = 'build';
 let source = 'src';
 let fs = require('fs');

@@ -8,14 +8,21 @@
                 <div class="header-location js-popup-open" data-popup="location-popup">
                     Челябинск
                 </div>
-                <div class="header-delivery">
-                    Самовывоз: ул. Батумская, 1
+
+
+                <div data-cdd="Y" class="header-delivery js-popup-open" data-popup="delivery-popup"
+                     data-type="delivery">Доставим сегодня к 10:00 - 13:00
                 </div>
 
+
+                <div class="user-type-refresh-delivery js-popup-open" data-popup="delivery-popup"
+                     data-type="delivery"></div>
             </div>
+
             <div class="header-links">
+
                 <a href="tel:88005501651" class="header-links-phone">8-800-55-01-651</a>
-                <span>с 9:00 до 21:00</span>
+                <span>с 09:00 до 21:00</span>
             </div>
         </div>
         <div class="header-middle">
@@ -23,9 +30,9 @@
                 <div class="catalog-button js-catalog-open">Каталог</div>
                 <div id="title-search" class="search">
                     <form action="/search/index.php">
-                        <div class="bx-input-group" data-children-count="1">
+                        <div class="bx-input-group">
                             <input id="title-search-input" type="text" name="q" value="" autocomplete="off"
-                                   class="search-input" placeholder="">
+                                   class="search-input">
                         </div>
                     </form>
                 </div>
@@ -33,14 +40,17 @@
 
 
             <div class="header-buttons">
+
                 <div class="header-buttons-item bordered-btn js-status-open">Статус заказа</div>
+
+
                 <div class="header-buttons-item bordered-btn login-btn js-popup-open" data-popup="authorize-popup">
                     Вход
                 </div>
-                <a href="/favorite/" class="header-buttons-item bordered-btn basket-header-btn"></a>
+                <a href="/favorite/" class="header-buttons-item bordered-btn favorite-header-btn"></a>
 
 
-                <form action="/order-status/" class="status-popup" id="status-popup" data-children-count="1">
+                <form action="/order-status/" class="status-popup" id="status-popup">
                     <input name="order" type="text" class="status-popup-input input" placeholder="Номер заказа"
                            value="">
                     <button type="submit" class="grey-btn status-popup-btn">Проверить</button>
@@ -49,180 +59,62 @@
 
             </div>
         </div>
-        <nav class="header-nav">
+
+        <nav class="header-nav priority-nav priority-nav-has-dropdown is-empty" instance="0">
             <ul class="header-nav__ul">
-                <div class="header-nav__group">
-                    <li><a href="#">Адреса магазинов</a></li>
-                </div>
-                <div class="header-nav__group">
-                    <li><a href="#">о компании</a></li>
-                    <li><a href="#">новости</a></li>
-                    <li><a href="#">поставщикам</a></li>
-                    <li><a href="#">наши бренды</a></li>
-                </div>
-                <div class="header-nav__group">
-                    <li><a href="#">юрлицам</a></li>
-                    <li><a href="#">Аренда</a></li>
-                    <li><a href="#">франшиза</a></li>
-                </div>
-                <div class="header-nav__group">
-                    <li><a href="#">доставка</a></li>
-                    <li><a href="#">помощь покупателю</a></li>
-                </div>
+
+
             </ul>
+            <span class="header-nav__dropdown-wrapper priority-nav__wrapper" aria-haspopup="true"><button
+                    aria-controls="menu" type="button"
+                    class="header-nav__dropdown-toggle priority-nav__dropdown-toggle priority-nav-is-visible"
+                    prioritynav-count="1">menu</button><ul aria-hidden="true"
+                                                           class="header-nav__dropdown priority-nav__dropdown"><div
+                    class="header-nav__group">
+                                <li>
+                <a href="/about/shops/" class="icon_adresa_magazinov super section-link">
+            		Адреса магазинов            	</a>
+            	            		<style type="text/css">
+
+            		.section-link.icon_adresa_magazinov.super:before {
+                        background-image: url('/upload/iblock/194/map.svg') !important;
+                    }
+
+            		</style>
+            	             	</li>
+            	            	</div><div class="header-nav__group">
+            	                            <li>
+                <a href="/about/" class="icon_o_kompanii section-link">
+            		О компании            	</a>
+            	            	</li>
+            	                            <li>
+                <a href="/about/news/" class="icon_novosti section-link">
+            		Новости            	</a>
+            	            	</li>
+            	                            <li>
+                <a href="/busy/postavshchikam/" class="icon_postavshchikam section-link">
+            		Поставщикам            	</a>
+            	            	</li>
+            	                            <li>
+                <a href="/busy/" class="icon_biznesu section-link">
+            		Бизнесу            	</a>
+            	            	</li>
+            	                            <li>
+                <a href="/busy/arenda.php" class="icon_arenda section-link">
+            		Аренда            	</a>
+            	            	</li>
+            	                            <li>
+                <a href="/busy/contacts/" class="icon_kontakty section-link">
+            		Контакты            	</a>
+            	            	</li>
+            	                            <li>
+                <a href="/ishop/dostavka/" class="icon_dostavka section-link">
+            		Доставка            	</a>
+            	            	</li>
+
+                </div></ul></span>
         </nav>
+
 
     </div>
 </header>
-
-<div class="mob-header">
-    <div class="wrapper">
-        <a class="mob-header-menu js-catalog-menu"></a>
-        <div class="mob-logotip">
-            <a href="/" class="logotip"></a>
-        </div>
-        <a href="" class="mob-search"></a>
-        <a href="#" class="mob-login js-popup-open" data-popup="authorize-popup"></a>
-        <a href="/cart/" class="mob-header-basket bx-basket bx-opener">
-        </a>
-    </div>
-    <div class="mob-navigation">
-
-        <div class="mob-nav-line">
-            <a href="/favorite/" class="my-favorite">Избранные товары</a>
-        </div>
-
-    </div>
-</div>
-
-<div class="mob-nav">
-
-    <div class="wrapper">
-        <header class="mob-nav__header">
-            <a class="mob-nav__close js-mob-nav-close"></a>
-            <div class="mob-nav__logotip">
-                <a href="/" class="logotip"></a>
-            </div>
-        </header>
-        <main class="mob-nav__main">
-            <div class="mob-nav__delivery">
-                <div class="mob-nav__city">Город: <a href="#">Челябинск</a></div>
-                <div class="mob-nav__adress">Самовывоз: ул. Батумская, 1</div>
-                <a href="#" class="mob-nav__btn-change">изменить</a>
-            </div>
-            <div class="mob-nav__catalog-btn js-mob-nav-catalog">Каталог</div>
-            <ul class="mob-nav__ul">
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Адреса магазинов</a> <span class="mob-nav__count">4</span></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Вакансии</a></li>
-                <li><a href="#">Алкомаркеты «Правильный градус»</a></li>
-            </ul>
-            <ul class="mob-nav__ul">
-                <li><a href="#">Интернет-магазин</a></li>
-                <li><a href="#">Оплата</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Публичная оферта</a></li>
-                <li><a href="#">Политика конфиденциальности</a></li>
-                <li><a href="#">Помощь покупателю</a></li>
-                <li><a href="#">Корпоративным и оптовым клиентам</a></li>
-            </ul>
-            <ul class="mob-nav__ul">
-                <li><a href="#">Бизнесу</a></li>
-                <li><a href="#">Поставщикам</a></li>
-                <li><a href="#">Аренда</a></li>
-                <li><a href="#">Инвесторам</a></li>
-                <li><a href="#">Франшиза</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-            <ul class="mob-nav__auth">
-                <li><a href="#">Статус заказа</a></li>
-                <li><a href="#"><i class="icon icon-login"></i>Анастасия</a> <a href="#">Выйти</a></li>
-                <li><a href="#"><i class="icon icon-favorite"></i>Избранные товары</a> <span>4</span></li>
-            </ul>
-        </main>
-        <footer class="mob-nav__footer">
-            <a class="mob-nav__feedback-btn" href="">обратная связь</a>
-            <a class="mob-nav__phone" href="tel:8-800-55-01-651">8-800-55-01-651</a>
-            <div class="mob-nav__work">с 9:00 до 21:00</div>
-            <a class="mob-nav__email" href="mailto:info@dobrotsen">info@dobrotsen</a>
-            <div class="mob-nav__social">
-                <a class="mob-nav__social-item inst" href="#"></a>
-                <a class="mob-nav__social-item ok" href="#"></a>
-                <a class="mob-nav__social-item vk" href="#"></a>
-            </div>
-        </footer>
-    </div>
-
-    <div class="mob-catalog">
-        <div class="wrapper">
-            <header class="mob-catalog__header">
-                <a class="mob-catalog__prev js-mob-nav-prev"></a>
-                <div class="mob-catalog__title">Каталог</div>
-            </header>
-            <form class="mob-catalog__form" action="">
-                <input type="text" class="form-control" placeholder="Поиск">
-                <input type="submit" class="btn btn-search" value="">
-            </form>
-            <ul class="mob-catalog__ul">
-                <li>
-                    <a href="#"><i class="icon icon-fruct"></i>Свежие овощи, фрукты</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon icon-hleb"></i>Хлеб, выпечка, снеки
-                        <div>Чипсы, вафли, пряники, мармелад и шоколад</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon icon-myaso"></i>Мясо, птица, колбасы
-                        <div>Сосиски, сардельки и мясные полуфабрикаты</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon icon-fish"></i> Рыба и морепродукты
-                        <div>Сосиски, сардельки и мясные полуфабрикаты</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon icon-tea"></i> Чай, кофе, какао
-                        <div>Подарочные наборы</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon icon-water"></i>Вода, соки, напитки
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon icon-sous"></i> Соусы, майонез, специи
-                        <div>Сахар, соль, кетчуп</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon icon-jam"></i> Консервы, варенье, мед
-                        <div>Орехи, сухофрукты, зерновые батончики</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon icon-cereals"></i> Крупы, макароны, масло
-                        <div>Растительное масло, продукты быстрого приготовления</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon icon-milk"></i> Молочные продукты и яйца
-                        <div>Йогурты, мороженое, детские молочные продукты</div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-

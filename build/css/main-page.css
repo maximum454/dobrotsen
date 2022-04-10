@@ -1,0 +1,357 @@
+/*
+* @include triangle within a pseudo element and add positioning properties (ie. top, left)
+* $direction: up, down, left, right
+*/
+
+/*
+  Maintain ratio mixin.
+  @param {List} [$ratio] Ratio the element needs to maintain. A 16:9 ratio would look like this:
+  .element { @include maintain-ratio(16 9); }
+*/
+
+.main-brand {
+  margin-bottom: 32px;
+}
+
+.main-brand__header {
+  margin-bottom: 16px;
+  position: relative;
+  padding-right: 10px;
+}
+
+.main-brand__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.main-brand__link-arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOCAYAAAASVl2WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACNSURBVHgBfZE7DoUgFES5PPNia2lHiY1xC67cLVjSSWdhYWuMioy/EBSmgJA54c4ADUXZMavEzHWmlGaeuDl3sdC/GaUUL2A1vLaQDkGEpZeV+NHW2ANM7Y6jmwxB5F73BZEfyoe4D6RseuYaNwOEBmiCRmiGhhQzc9WeIUPmUTNmHi8ZM6Hk+otPE9oBkZxl9Kja1+0AAAAASUVORK5CYII=");
+  background-repeat: no-repeat;
+  width: 9px;
+  height: 14px;
+  display: block;
+}
+
+.main-recipes {
+  margin-bottom: 32px;
+}
+
+.main-recipes__header {
+  margin-bottom: 16px;
+  position: relative;
+  padding-right: 10px;
+}
+
+.main-recipes__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.main-recipes__link-arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOCAYAAAASVl2WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACNSURBVHgBfZE7DoUgFES5PPNia2lHiY1xC67cLVjSSWdhYWuMioy/EBSmgJA54c4ADUXZMavEzHWmlGaeuDl3sdC/GaUUL2A1vLaQDkGEpZeV+NHW2ANM7Y6jmwxB5F73BZEfyoe4D6RseuYaNwOEBmiCRmiGhhQzc9WeIUPmUTNmHi8ZM6Hk+otPE9oBkZxl9Kja1+0AAAAASUVORK5CYII=");
+  background-repeat: no-repeat;
+  width: 9px;
+  height: 14px;
+  display: block;
+}
+
+.main-recipes__figure {
+  margin: 0 0 5px;
+}
+
+.main-recipes__figure img {
+  display: block;
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-recipes__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.main-recipes__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #BDBDBD;
+  margin-bottom: 8px;
+}
+
+.main-catalog {
+  margin-bottom: 32px;
+}
+
+.main-catalog__header {
+  margin-bottom: 16px;
+  position: relative;
+  padding-right: 10px;
+}
+
+.main-catalog__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.main-catalog__link-arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOCAYAAAASVl2WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACNSURBVHgBfZE7DoUgFES5PPNia2lHiY1xC67cLVjSSWdhYWuMioy/EBSmgJA54c4ADUXZMavEzHWmlGaeuDl3sdC/GaUUL2A1vLaQDkGEpZeV+NHW2ANM7Y6jmwxB5F73BZEfyoe4D6RseuYaNwOEBmiCRmiGhhQzc9WeIUPmUTNmHi8ZM6Hk+otPE9oBkZxl9Kja1+0AAAAASUVORK5CYII=");
+  background-repeat: no-repeat;
+  width: 9px;
+  height: 14px;
+  display: block;
+}
+
+.main-catalog .products-item-image {
+  position: relative;
+  width: auto;
+  height: auto;
+  top: auto;
+  left: auto;
+  margin: 0 -12px 12px;
+}
+
+.main-catalog .products-item-bottom,
+.main-catalog .products-item-title {
+  margin-left: 0;
+}
+
+.main-rate-store {
+  background: -o-linear-gradient(0.18deg, #FA4F4F -31.24%, #FF8A83 99.85%);
+  background: linear-gradient(89.82deg, #FA4F4F -31.24%, #FF8A83 99.85%);
+  padding: 20px 16px;
+}
+
+.main-rate-store__body {
+  max-width: 280px;
+  position: relative;
+}
+
+.main-rate-store__body:before {
+  content: '';
+  position: absolute;
+  top: -32px;
+  left: 258px;
+  background-image: url("../img/main-rate-store-bg.svg");
+  background-repeat: no-repeat;
+  width: 143px;
+  height: 220px;
+}
+
+.main-rate-store__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+
+.main-rate-store__anons {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 0 0 20px;
+}
+
+.main-rate-store__btn {
+  line-height: 42px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  display: inline-block;
+  padding: 0 16px;
+  height: 40px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.main-subscribe {
+  background: rgba(229, 232, 245, 0.4);
+  padding: 24px 0;
+  margin-bottom: 32px;
+}
+
+.main-subscribe__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.main-subscribe__anons {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  margin: 0 0 12px;
+}
+
+.main-subscribe__agree {
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  display: block;
+}
+
+.main-subscribe__agree a {
+  text-decoration: underline;
+}
+
+.main-subscribe__input {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+}
+
+.main-subscribe__input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+}
+
+.main-subscribe__input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+}
+
+.main-subscribe__input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+}
+
+.main-subscribe__input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+}
+
+.main-subscribe__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+}
+
+.main-subscribe__submit {
+  width: 100%;
+  background: #EB292F;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #F2F2F2;
+}
+
+.main-order-entity {
+  background: -o-linear-gradient(0.18deg, #2C76C0 -31.24%, #7FBFFF 99.85%);
+  background: linear-gradient(89.82deg, #2C76C0 -31.24%, #7FBFFF 99.85%);
+  padding: 20px 16px;
+}
+
+.main-order-entity__body {
+  max-width: 280px;
+  position: relative;
+}
+
+.main-order-entity__body:before {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 280px;
+  background-image: url("../img/main-order-entity-bg.svg");
+  background-repeat: no-repeat;
+  width: 68px;
+  height: 200px;
+}
+
+.main-order-entity__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+
+.main-order-entity__anons {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin: 0 0 20px;
+}
+
+.main-order-entity__btn {
+  line-height: 42px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  display: inline-block;
+  padding: 0 16px;
+  height: 40px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #333333;
+}

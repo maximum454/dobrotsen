@@ -1,0 +1,49 @@
+.main-recipes{
+  margin-bottom: 32px;
+  &__header{
+    margin-bottom: 16px;
+    position: relative;
+    padding-right: 10px;
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+  }
+  &__link-arrow{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOCAYAAAASVl2WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACNSURBVHgBfZE7DoUgFES5PPNia2lHiY1xC67cLVjSSWdhYWuMioy/EBSmgJA54c4ADUXZMavEzHWmlGaeuDl3sdC/GaUUL2A1vLaQDkGEpZeV+NHW2ANM7Y6jmwxB5F73BZEfyoe4D6RseuYaNwOEBmiCRmiGhhQzc9WeIUPmUTNmHi8ZM6Hk+otPE9oBkZxl9Kja1+0AAAAASUVORK5CYII=');
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 14px;
+    display: block;
+  }
+  &__body{}
+  &__item{}
+  &__figure{
+    margin: 0 0 5px;
+    img{
+      display: block;
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__name{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+  }
+  &__label{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #BDBDBD;
+    margin-bottom: 8px;
+  }
+}

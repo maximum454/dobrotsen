@@ -1,0 +1,50 @@
+.main-rate-store{
+  background: linear-gradient(89.82deg, #FA4F4F -31.24%, #FF8A83 99.85%);
+  padding: 20px 16px;
+  &__body{
+    max-width: 280px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: -32px;
+      left: 258px;
+      background-image: url("../img/main-rate-store-bg.svg");
+      background-repeat: no-repeat;
+      width: 143px;
+      height: 220px;
+    }
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+  }
+  &__anons{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0 0 20px;
+  }
+  &__btn{
+    line-height: 42px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    display: inline-block;
+    padding: 0 16px;
+    height: 40px;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #333333;
+  }
+}

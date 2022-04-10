@@ -29,11 +29,14 @@
 
     <title>Главная</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/dobrotsen.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet"
+          href="https://dobrotsen.ru/bitrix/cache/css/s1/main_new/template_af3514de97f2107b40b84b606a0ddc56/template_af3514de97f2107b40b84b606a0ddc56_v1.css?1649095688341979">
+    <link rel="stylesheet" href="css/main-page.min.css">
 </head>
 <body>
 
-    <header class="header">
+<header class="header">
     <div class="wrapper">
         <div class="header-top">
             <a class="logotip" href="/">
@@ -43,14 +46,21 @@
                 <div class="header-location js-popup-open" data-popup="location-popup">
                     Челябинск
                 </div>
-                <div class="header-delivery">
-                    Самовывоз: ул. Батумская, 1
+
+
+                <div data-cdd="Y" class="header-delivery js-popup-open" data-popup="delivery-popup"
+                     data-type="delivery">Доставим сегодня к 10:00 - 13:00
                 </div>
 
+
+                <div class="user-type-refresh-delivery js-popup-open" data-popup="delivery-popup"
+                     data-type="delivery"></div>
             </div>
+
             <div class="header-links">
+
                 <a href="tel:88005501651" class="header-links-phone">8-800-55-01-651</a>
-                <span>с 9:00 до 21:00</span>
+                <span>с 09:00 до 21:00</span>
             </div>
         </div>
         <div class="header-middle">
@@ -58,9 +68,9 @@
                 <div class="catalog-button js-catalog-open">Каталог</div>
                 <div id="title-search" class="search">
                     <form action="/search/index.php">
-                        <div class="bx-input-group" data-children-count="1">
+                        <div class="bx-input-group">
                             <input id="title-search-input" type="text" name="q" value="" autocomplete="off"
-                                   class="search-input" placeholder="">
+                                   class="search-input">
                         </div>
                     </form>
                 </div>
@@ -68,14 +78,17 @@
 
 
             <div class="header-buttons">
+
                 <div class="header-buttons-item bordered-btn js-status-open">Статус заказа</div>
+
+
                 <div class="header-buttons-item bordered-btn login-btn js-popup-open" data-popup="authorize-popup">
                     Вход
                 </div>
-                <a href="/favorite/" class="header-buttons-item bordered-btn basket-header-btn"></a>
+                <a href="/favorite/" class="header-buttons-item bordered-btn favorite-header-btn"></a>
 
 
-                <form action="/order-status/" class="status-popup" id="status-popup" data-children-count="1">
+                <form action="/order-status/" class="status-popup" id="status-popup">
                     <input name="order" type="text" class="status-popup-input input" placeholder="Номер заказа"
                            value="">
                     <button type="submit" class="grey-btn status-popup-btn">Проверить</button>
@@ -84,186 +97,932 @@
 
             </div>
         </div>
-        <nav class="header-nav">
+
+        <nav class="header-nav priority-nav priority-nav-has-dropdown is-empty" instance="0">
             <ul class="header-nav__ul">
-                <div class="header-nav__group">
-                    <li><a href="#">Адреса магазинов</a></li>
-                </div>
-                <div class="header-nav__group">
-                    <li><a href="#">о компании</a></li>
-                    <li><a href="#">новости</a></li>
-                    <li><a href="#">поставщикам</a></li>
-                    <li><a href="#">наши бренды</a></li>
-                </div>
-                <div class="header-nav__group">
-                    <li><a href="#">юрлицам</a></li>
-                    <li><a href="#">Аренда</a></li>
-                    <li><a href="#">франшиза</a></li>
-                </div>
-                <div class="header-nav__group">
-                    <li><a href="#">доставка</a></li>
-                    <li><a href="#">помощь покупателю</a></li>
-                </div>
+
+
             </ul>
+            <span class="header-nav__dropdown-wrapper priority-nav__wrapper" aria-haspopup="true"><button
+                    aria-controls="menu" type="button"
+                    class="header-nav__dropdown-toggle priority-nav__dropdown-toggle priority-nav-is-visible"
+                    prioritynav-count="1">menu</button><ul aria-hidden="true"
+                                                           class="header-nav__dropdown priority-nav__dropdown"><div
+                    class="header-nav__group">
+                                <li>
+                <a href="/about/shops/" class="icon_adresa_magazinov super section-link">
+            		Адреса магазинов            	</a>
+            	            		<style type="text/css">
+
+            		.section-link.icon_adresa_magazinov.super:before {
+                        background-image: url('/upload/iblock/194/map.svg') !important;
+                    }
+
+            		</style>
+            	             	</li>
+            	            	</div><div class="header-nav__group">
+            	                            <li>
+                <a href="/about/" class="icon_o_kompanii section-link">
+            		О компании            	</a>
+            	            	</li>
+            	                            <li>
+                <a href="/about/news/" class="icon_novosti section-link">
+            		Новости            	</a>
+            	            	</li>
+            	                            <li>
+                <a href="/busy/postavshchikam/" class="icon_postavshchikam section-link">
+            		Поставщикам            	</a>
+            	            	</li>
+            	                            <li>
+                <a href="/busy/" class="icon_biznesu section-link">
+            		Бизнесу            	</a>
+            	            	</li>
+            	                            <li>
+                <a href="/busy/arenda.php" class="icon_arenda section-link">
+            		Аренда            	</a>
+            	            	</li>
+            	                            <li>
+                <a href="/busy/contacts/" class="icon_kontakty section-link">
+            		Контакты            	</a>
+            	            	</li>
+            	                            <li>
+                <a href="/ishop/dostavka/" class="icon_dostavka section-link">
+            		Доставка            	</a>
+            	            	</li>
+
+                </div></ul></span>
         </nav>
+
 
     </div>
 </header>
 
-<div class="mob-header">
+<div class="main-brand">
     <div class="wrapper">
-        <a class="mob-header-menu js-catalog-menu"></a>
-        <div class="mob-logotip">
-            <a href="/" class="logotip"></a>
+        <div class="main-brand__header">
+            <div class="main-brand__title">Наши бренды</div>
+            <a class="main-brand__link-arrow" href="#"></a>
         </div>
-        <a href="" class="mob-search"></a>
-        <a href="#" class="mob-login js-popup-open" data-popup="authorize-popup"></a>
-        <a href="/cart/" class="mob-header-basket bx-basket bx-opener">
-        </a>
-    </div>
-    <div class="mob-navigation">
-
-        <div class="mob-nav-line">
-            <a href="/favorite/" class="my-favorite">Избранные товары</a>
-        </div>
-
-    </div>
-</div>
-
-<div class="mob-nav">
-
-    <div class="wrapper">
-        <header class="mob-nav__header">
-            <a class="mob-nav__close js-mob-nav-close"></a>
-            <div class="mob-nav__logotip">
-                <a href="/" class="logotip"></a>
+        <div class="main-brand__body">
+            <div class="swiper-container swiper-brand">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="http://placehold.jp/220x220.png" alt=""></div>
+                    <div class="swiper-slide"><img src="http://placehold.jp/220x220.png" alt=""></div>
+                    <div class="swiper-slide"><img src="http://placehold.jp/220x220.png" alt=""></div>
+                    <div class="swiper-slide"><img src="http://placehold.jp/220x220.png" alt=""></div>
+                    <div class="swiper-slide"><img src="http://placehold.jp/220x220.png" alt=""></div>
+                </div>
             </div>
-        </header>
-        <main class="mob-nav__main">
-            <div class="mob-nav__delivery">
-                <div class="mob-nav__city">Город: <a href="#">Челябинск</a></div>
-                <div class="mob-nav__adress">Самовывоз: ул. Батумская, 1</div>
-                <a href="#" class="mob-nav__btn-change">изменить</a>
-            </div>
-            <div class="mob-nav__catalog-btn js-mob-nav-catalog">Каталог</div>
-            <ul class="mob-nav__ul">
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Адреса магазинов</a> <span class="mob-nav__count">4</span></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Вакансии</a></li>
-                <li><a href="#">Алкомаркеты «Правильный градус»</a></li>
-            </ul>
-            <ul class="mob-nav__ul">
-                <li><a href="#">Интернет-магазин</a></li>
-                <li><a href="#">Оплата</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Публичная оферта</a></li>
-                <li><a href="#">Политика конфиденциальности</a></li>
-                <li><a href="#">Помощь покупателю</a></li>
-                <li><a href="#">Корпоративным и оптовым клиентам</a></li>
-            </ul>
-            <ul class="mob-nav__ul">
-                <li><a href="#">Бизнесу</a></li>
-                <li><a href="#">Поставщикам</a></li>
-                <li><a href="#">Аренда</a></li>
-                <li><a href="#">Инвесторам</a></li>
-                <li><a href="#">Франшиза</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-            <ul class="mob-nav__auth">
-                <li><a href="#">Статус заказа</a></li>
-                <li><a href="#"><i class="icon icon-login"></i>Анастасия</a> <a href="#">Выйти</a></li>
-                <li><a href="#"><i class="icon icon-favorite"></i>Избранные товары</a> <span>4</span></li>
-            </ul>
-        </main>
-        <footer class="mob-nav__footer">
-            <a class="mob-nav__feedback-btn" href="">обратная связь</a>
-            <a class="mob-nav__phone" href="tel:8-800-55-01-651">8-800-55-01-651</a>
-            <div class="mob-nav__work">с 9:00 до 21:00</div>
-            <a class="mob-nav__email" href="mailto:info@dobrotsen">info@dobrotsen</a>
-            <div class="mob-nav__social">
-                <a class="mob-nav__social-item inst" href="#"></a>
-                <a class="mob-nav__social-item ok" href="#"></a>
-                <a class="mob-nav__social-item vk" href="#"></a>
-            </div>
-        </footer>
-    </div>
-
-    <div class="mob-catalog">
-        <div class="wrapper">
-            <header class="mob-catalog__header">
-                <a class="mob-catalog__prev js-mob-nav-prev"></a>
-                <div class="mob-catalog__title">Каталог</div>
-            </header>
-            <form class="mob-catalog__form" action="">
-                <input type="text" class="form-control" placeholder="Поиск">
-                <input type="submit" class="btn btn-search" value="">
-            </form>
-            <ul class="mob-catalog__ul">
-                <li>
-                    <a href="#"><i class="icon icon-fruct"></i>Свежие овощи, фрукты</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon icon-hleb"></i>Хлеб, выпечка, снеки
-                        <div>Чипсы, вафли, пряники, мармелад и шоколад</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon icon-myaso"></i>Мясо, птица, колбасы
-                        <div>Сосиски, сардельки и мясные полуфабрикаты</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon icon-fish"></i> Рыба и морепродукты
-                        <div>Сосиски, сардельки и мясные полуфабрикаты</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon icon-tea"></i> Чай, кофе, какао
-                        <div>Подарочные наборы</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon icon-water"></i>Вода, соки, напитки
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon icon-sous"></i> Соусы, майонез, специи
-                        <div>Сахар, соль, кетчуп</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon icon-jam"></i> Консервы, варенье, мед
-                        <div>Орехи, сухофрукты, зерновые батончики</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon icon-cereals"></i> Крупы, макароны, масло
-                        <div>Растительное масло, продукты быстрого приготовления</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon icon-milk"></i> Молочные продукты и яйца
-                        <div>Йогурты, мороженое, детские молочные продукты</div>
-                    </a>
-                </li>
-            </ul>
         </div>
     </div>
 </div>
 
+<div class="main-recipes">
+    <div class="wrapper">
+        <div class="main-recipes__header">
+            <div class="main-recipes__title">Рецепты</div>
+            <a class="main-recipes__link-arrow" href="#"></a>
+        </div>
+        <div class="main-recipes__body">
+            <div class="swiper-container swiper-recipes">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="main-recipes__item">
+                            <figure class="main-recipes__figure">
+                                <img src="http://placehold.jp/220x150.png" alt="">
+                            </figure>
+                            <div class="main-recipes__content">
+                                <div class="main-recipes__label">Правильное питание</div>
+                                <div class="main-recipes__name">Киш с курицей и грибами</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-recipes__item">
+                            <figure class="main-recipes__figure">
+                                <img src="http://placehold.jp/220x150.png" alt="">
+                            </figure>
+                            <div class="main-recipes__content">
+                                <div class="main-recipes__label">Правильное питание</div>
+                                <div class="main-recipes__name">Киш с курицей и грибами</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-recipes__item">
+                            <figure class="main-recipes__figure">
+                                <img src="http://placehold.jp/220x150.png" alt="">
+                            </figure>
+                            <div class="main-recipes__content">
+                                <div class="main-recipes__label">Правильное питание</div>
+                                <div class="main-recipes__name">Киш с курицей и грибами</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-recipes__item">
+                            <figure class="main-recipes__figure">
+                                <img src="http://placehold.jp/220x150.png" alt="">
+                            </figure>
+                            <div class="main-recipes__content">
+                                <div class="main-recipes__label">Правильное питание</div>
+                                <div class="main-recipes__name">Киш с курицей и грибами</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="main-catalog">
+    <div class="wrapper">
+        <div class="main-catalog__header">
+            <div class="main-catalog__title">Рыба и морепродукты</div>
+            <a class="main-catalog__link-arrow" href="#"></a>
+        </div>
+        <div class="main-catalog__body">
+            <div class="swiper-container swiper-catalog">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div id="item-111304" class="products-item" data-product-container="111304"
+                             itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                            <span itemprop="position" style="display:none"></span>
+                            <link itemprop="url" href="/#item-111304">
+                            <div itemprop="item" itemscope="" itemtype="https://schema.org/Offer">
+                                <a href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva"
+                                   class="products-item-image">
+                                    <img src="https://dobrotsen.ru/thumb/182x182xffffff/upload/resize_cache/iblock/97c/s1b9qmno21kmhe1kejzda5br8kujwdg9/182_182_0/21.-Romshteks-rybnyy-85165.jpg"
+                                         alt="Торт Фисташка с малиной 290г Русская Нева" itemprop="image">
+                                </a>
 
+                                <div class="products-item-title">
 
-<script src="js/dobrotsen.min.js"></script>
+                                    <a itemprop="url"
+                                       href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva">
+                                        <span itemprop="name">Торт Фисташка с малиной 290г Русская Нева</span>
+                                    </a>
+                                </div>
+                                <div class="products-item-bottom">
+                                    <div class="products-item-price">
+                                        <span itemprop="price">99.90 ₽</span>
+                                        <div class="value" style="display: none;">290г</div>
+                                    </div>
+                                    <div class="products-item-button">
+                                        <a href="#" class="to-basket" data-action="add2cart" data-product="111304"></a>
+                                        <div class="buy-quantity" style="display:none;">
+                                            <input data-product="111304" data-min="0" data-step="1"
+                                                   class="value js-quantity" type="text" value="1">
+                                            <span class="minus js-minus"></span>
+                                            <span class="plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mob-card-buttons">
+                                        <div class="mob-to-basket" data-action="add2cart" data-product="111304">В
+                                            корзину
+                                        </div>
+                                        <div class="mob-favorite" data-action="add2favorite" data-product="111304">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favorite" data-action="add2favorite" data-product="111304"></div>
+                                <div class="quantity">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="item-111304" class="products-item" data-product-container="111304"
+                             itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                            <span itemprop="position" style="display:none"></span>
+                            <link itemprop="url" href="/#item-111304">
+                            <div itemprop="item" itemscope="" itemtype="https://schema.org/Offer">
+                                <a href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva"
+                                   class="products-item-image">
+                                    <img src="https://dobrotsen.ru/thumb/182x182xffffff/upload/resize_cache/iblock/97c/s1b9qmno21kmhe1kejzda5br8kujwdg9/182_182_0/21.-Romshteks-rybnyy-85165.jpg"
+                                         alt="Торт Фисташка с малиной 290г Русская Нева" itemprop="image">
+                                </a>
+
+                                <div class="products-item-title">
+
+                                    <a itemprop="url"
+                                       href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva">
+                                        <span itemprop="name">Торт Фисташка с малиной 290г Русская Нева</span>
+                                    </a>
+                                </div>
+                                <div class="products-item-bottom">
+                                    <div class="products-item-price">
+                                        <span itemprop="price">99.90 ₽</span>
+                                        <div class="value" style="display: none;">290г</div>
+                                    </div>
+                                    <div class="products-item-button">
+                                        <a href="#" class="to-basket" data-action="add2cart" data-product="111304"></a>
+                                        <div class="buy-quantity" style="display:none;">
+                                            <input data-product="111304" data-min="0" data-step="1"
+                                                   class="value js-quantity" type="text" value="1">
+                                            <span class="minus js-minus"></span>
+                                            <span class="plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mob-card-buttons">
+                                        <div class="mob-to-basket" data-action="add2cart" data-product="111304">В
+                                            корзину
+                                        </div>
+                                        <div class="mob-favorite" data-action="add2favorite" data-product="111304">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favorite" data-action="add2favorite" data-product="111304"></div>
+                                <div class="quantity">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="item-111304" class="products-item" data-product-container="111304"
+                             itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                            <span itemprop="position" style="display:none"></span>
+                            <link itemprop="url" href="/#item-111304">
+                            <div itemprop="item" itemscope="" itemtype="https://schema.org/Offer">
+                                <a href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva"
+                                   class="products-item-image">
+                                    <img src="https://dobrotsen.ru/thumb/182x182xffffff/upload/resize_cache/iblock/97c/s1b9qmno21kmhe1kejzda5br8kujwdg9/182_182_0/21.-Romshteks-rybnyy-85165.jpg"
+                                         alt="Торт Фисташка с малиной 290г Русская Нева" itemprop="image">
+                                </a>
+
+                                <div class="products-item-title">
+
+                                    <a itemprop="url"
+                                       href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva">
+                                        <span itemprop="name">Торт Фисташка с малиной 290г Русская Нева</span>
+                                    </a>
+                                </div>
+                                <div class="products-item-bottom">
+                                    <div class="products-item-price">
+                                        <span itemprop="price">99.90 ₽</span>
+                                        <div class="value" style="display: none;">290г</div>
+                                    </div>
+                                    <div class="products-item-button">
+                                        <a href="#" class="to-basket" data-action="add2cart" data-product="111304"></a>
+                                        <div class="buy-quantity" style="display:none;">
+                                            <input data-product="111304" data-min="0" data-step="1"
+                                                   class="value js-quantity" type="text" value="1">
+                                            <span class="minus js-minus"></span>
+                                            <span class="plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mob-card-buttons">
+                                        <div class="mob-to-basket" data-action="add2cart" data-product="111304">В
+                                            корзину
+                                        </div>
+                                        <div class="mob-favorite" data-action="add2favorite" data-product="111304">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favorite" data-action="add2favorite" data-product="111304"></div>
+                                <div class="quantity">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="item-111304" class="products-item" data-product-container="111304"
+                             itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                            <span itemprop="position" style="display:none"></span>
+                            <link itemprop="url" href="/#item-111304">
+                            <div itemprop="item" itemscope="" itemtype="https://schema.org/Offer">
+                                <a href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva"
+                                   class="products-item-image">
+                                    <img src="https://dobrotsen.ru/thumb/182x182xffffff/upload/resize_cache/iblock/97c/s1b9qmno21kmhe1kejzda5br8kujwdg9/182_182_0/21.-Romshteks-rybnyy-85165.jpg"
+                                         alt="Торт Фисташка с малиной 290г Русская Нева" itemprop="image">
+                                </a>
+
+                                <div class="products-item-title">
+
+                                    <a itemprop="url"
+                                       href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva">
+                                        <span itemprop="name">Торт Фисташка с малиной 290г Русская Нева</span>
+                                    </a>
+                                </div>
+                                <div class="products-item-bottom">
+                                    <div class="products-item-price">
+                                        <span itemprop="price">99.90 ₽</span>
+                                        <div class="value" style="display: none;">290г</div>
+                                    </div>
+                                    <div class="products-item-button">
+                                        <a href="#" class="to-basket" data-action="add2cart" data-product="111304"></a>
+                                        <div class="buy-quantity" style="display:none;">
+                                            <input data-product="111304" data-min="0" data-step="1"
+                                                   class="value js-quantity" type="text" value="1">
+                                            <span class="minus js-minus"></span>
+                                            <span class="plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mob-card-buttons">
+                                        <div class="mob-to-basket" data-action="add2cart" data-product="111304">В
+                                            корзину
+                                        </div>
+                                        <div class="mob-favorite" data-action="add2favorite" data-product="111304">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favorite" data-action="add2favorite" data-product="111304"></div>
+                                <div class="quantity">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="item-111304" class="products-item" data-product-container="111304"
+                             itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                            <span itemprop="position" style="display:none"></span>
+                            <link itemprop="url" href="/#item-111304">
+                            <div itemprop="item" itemscope="" itemtype="https://schema.org/Offer">
+                                <a href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva"
+                                   class="products-item-image">
+                                    <img src="https://dobrotsen.ru/thumb/182x182xffffff/upload/resize_cache/iblock/97c/s1b9qmno21kmhe1kejzda5br8kujwdg9/182_182_0/21.-Romshteks-rybnyy-85165.jpg"
+                                         alt="Торт Фисташка с малиной 290г Русская Нева" itemprop="image">
+                                </a>
+
+                                <div class="products-item-title">
+
+                                    <a itemprop="url"
+                                       href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva">
+                                        <span itemprop="name">Торт Фисташка с малиной 290г Русская Нева</span>
+                                    </a>
+                                </div>
+                                <div class="products-item-bottom">
+                                    <div class="products-item-price">
+                                        <span itemprop="price">99.90 ₽</span>
+                                        <div class="value" style="display: none;">290г</div>
+                                    </div>
+                                    <div class="products-item-button">
+                                        <a href="#" class="to-basket" data-action="add2cart" data-product="111304"></a>
+                                        <div class="buy-quantity" style="display:none;">
+                                            <input data-product="111304" data-min="0" data-step="1"
+                                                   class="value js-quantity" type="text" value="1">
+                                            <span class="minus js-minus"></span>
+                                            <span class="plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mob-card-buttons">
+                                        <div class="mob-to-basket" data-action="add2cart" data-product="111304">В
+                                            корзину
+                                        </div>
+                                        <div class="mob-favorite" data-action="add2favorite" data-product="111304">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favorite" data-action="add2favorite" data-product="111304"></div>
+                                <div class="quantity">1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-catalog">
+    <div class="wrapper">
+        <div class="main-catalog__header">
+            <div class="main-catalog__title">Напитки</div>
+            <a class="main-catalog__link-arrow" href="#"></a>
+        </div>
+        <div class="main-catalog__body">
+            <div class="swiper-container swiper-catalog">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div id="item-111304" class="products-item" data-product-container="111304"
+                             itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                            <span itemprop="position" style="display:none"></span>
+                            <link itemprop="url" href="/#item-111304">
+                            <div itemprop="item" itemscope="" itemtype="https://schema.org/Offer">
+                                <a href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva"
+                                   class="products-item-image">
+                                    <img src="https://dobrotsen.ru/thumb/182x182xffffff/upload/resize_cache/iblock/97c/s1b9qmno21kmhe1kejzda5br8kujwdg9/182_182_0/21.-Romshteks-rybnyy-85165.jpg"
+                                         alt="Торт Фисташка с малиной 290г Русская Нева" itemprop="image">
+                                </a>
+
+                                <div class="products-item-title">
+
+                                    <a itemprop="url"
+                                       href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva">
+                                        <span itemprop="name">Торт Фисташка с малиной 290г Русская Нева</span>
+                                    </a>
+                                </div>
+                                <div class="products-item-bottom">
+                                    <div class="products-item-price">
+                                        <span itemprop="price">99.90 ₽</span>
+                                        <div class="value" style="display: none;">290г</div>
+                                    </div>
+                                    <div class="products-item-button">
+                                        <a href="#" class="to-basket" data-action="add2cart" data-product="111304"></a>
+                                        <div class="buy-quantity" style="display:none;">
+                                            <input data-product="111304" data-min="0" data-step="1"
+                                                   class="value js-quantity" type="text" value="1">
+                                            <span class="minus js-minus"></span>
+                                            <span class="plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mob-card-buttons">
+                                        <div class="mob-to-basket" data-action="add2cart" data-product="111304">В
+                                            корзину
+                                        </div>
+                                        <div class="mob-favorite" data-action="add2favorite" data-product="111304">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favorite" data-action="add2favorite" data-product="111304"></div>
+                                <div class="quantity">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="item-111304" class="products-item" data-product-container="111304"
+                             itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                            <span itemprop="position" style="display:none"></span>
+                            <link itemprop="url" href="/#item-111304">
+                            <div itemprop="item" itemscope="" itemtype="https://schema.org/Offer">
+                                <a href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva"
+                                   class="products-item-image">
+                                    <img src="https://dobrotsen.ru/thumb/182x182xffffff/upload/resize_cache/iblock/97c/s1b9qmno21kmhe1kejzda5br8kujwdg9/182_182_0/21.-Romshteks-rybnyy-85165.jpg"
+                                         alt="Торт Фисташка с малиной 290г Русская Нева" itemprop="image">
+                                </a>
+
+                                <div class="products-item-title">
+
+                                    <a itemprop="url"
+                                       href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva">
+                                        <span itemprop="name">Торт Фисташка с малиной 290г Русская Нева</span>
+                                    </a>
+                                </div>
+                                <div class="products-item-bottom">
+                                    <div class="products-item-price">
+                                        <span itemprop="price">99.90 ₽</span>
+                                        <div class="value" style="display: none;">290г</div>
+                                    </div>
+                                    <div class="products-item-button">
+                                        <a href="#" class="to-basket" data-action="add2cart" data-product="111304"></a>
+                                        <div class="buy-quantity" style="display:none;">
+                                            <input data-product="111304" data-min="0" data-step="1"
+                                                   class="value js-quantity" type="text" value="1">
+                                            <span class="minus js-minus"></span>
+                                            <span class="plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mob-card-buttons">
+                                        <div class="mob-to-basket" data-action="add2cart" data-product="111304">В
+                                            корзину
+                                        </div>
+                                        <div class="mob-favorite" data-action="add2favorite" data-product="111304">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favorite" data-action="add2favorite" data-product="111304"></div>
+                                <div class="quantity">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="item-111304" class="products-item" data-product-container="111304"
+                             itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                            <span itemprop="position" style="display:none"></span>
+                            <link itemprop="url" href="/#item-111304">
+                            <div itemprop="item" itemscope="" itemtype="https://schema.org/Offer">
+                                <a href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva"
+                                   class="products-item-image">
+                                    <img src="https://dobrotsen.ru/thumb/182x182xffffff/upload/resize_cache/iblock/97c/s1b9qmno21kmhe1kejzda5br8kujwdg9/182_182_0/21.-Romshteks-rybnyy-85165.jpg"
+                                         alt="Торт Фисташка с малиной 290г Русская Нева" itemprop="image">
+                                </a>
+
+                                <div class="products-item-title">
+
+                                    <a itemprop="url"
+                                       href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva">
+                                        <span itemprop="name">Торт Фисташка с малиной 290г Русская Нева</span>
+                                    </a>
+                                </div>
+                                <div class="products-item-bottom">
+                                    <div class="products-item-price">
+                                        <span itemprop="price">99.90 ₽</span>
+                                        <div class="value" style="display: none;">290г</div>
+                                    </div>
+                                    <div class="products-item-button">
+                                        <a href="#" class="to-basket" data-action="add2cart" data-product="111304"></a>
+                                        <div class="buy-quantity" style="display:none;">
+                                            <input data-product="111304" data-min="0" data-step="1"
+                                                   class="value js-quantity" type="text" value="1">
+                                            <span class="minus js-minus"></span>
+                                            <span class="plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mob-card-buttons">
+                                        <div class="mob-to-basket" data-action="add2cart" data-product="111304">В
+                                            корзину
+                                        </div>
+                                        <div class="mob-favorite" data-action="add2favorite" data-product="111304">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favorite" data-action="add2favorite" data-product="111304"></div>
+                                <div class="quantity">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="item-111304" class="products-item" data-product-container="111304"
+                             itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                            <span itemprop="position" style="display:none"></span>
+                            <link itemprop="url" href="/#item-111304">
+                            <div itemprop="item" itemscope="" itemtype="https://schema.org/Offer">
+                                <a href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva"
+                                   class="products-item-image">
+                                    <img src="https://dobrotsen.ru/thumb/182x182xffffff/upload/resize_cache/iblock/97c/s1b9qmno21kmhe1kejzda5br8kujwdg9/182_182_0/21.-Romshteks-rybnyy-85165.jpg"
+                                         alt="Торт Фисташка с малиной 290г Русская Нева" itemprop="image">
+                                </a>
+
+                                <div class="products-item-title">
+
+                                    <a itemprop="url"
+                                       href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva">
+                                        <span itemprop="name">Торт Фисташка с малиной 290г Русская Нева</span>
+                                    </a>
+                                </div>
+                                <div class="products-item-bottom">
+                                    <div class="products-item-price">
+                                        <span itemprop="price">99.90 ₽</span>
+                                        <div class="value" style="display: none;">290г</div>
+                                    </div>
+                                    <div class="products-item-button">
+                                        <a href="#" class="to-basket" data-action="add2cart" data-product="111304"></a>
+                                        <div class="buy-quantity" style="display:none;">
+                                            <input data-product="111304" data-min="0" data-step="1"
+                                                   class="value js-quantity" type="text" value="1">
+                                            <span class="minus js-minus"></span>
+                                            <span class="plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mob-card-buttons">
+                                        <div class="mob-to-basket" data-action="add2cart" data-product="111304">В
+                                            корзину
+                                        </div>
+                                        <div class="mob-favorite" data-action="add2favorite" data-product="111304">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favorite" data-action="add2favorite" data-product="111304"></div>
+                                <div class="quantity">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="item-111304" class="products-item" data-product-container="111304"
+                             itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                            <span itemprop="position" style="display:none"></span>
+                            <link itemprop="url" href="/#item-111304">
+                            <div itemprop="item" itemscope="" itemtype="https://schema.org/Offer">
+                                <a href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva"
+                                   class="products-item-image">
+                                    <img src="https://dobrotsen.ru/thumb/182x182xffffff/upload/resize_cache/iblock/97c/s1b9qmno21kmhe1kejzda5br8kujwdg9/182_182_0/21.-Romshteks-rybnyy-85165.jpg"
+                                         alt="Торт Фисташка с малиной 290г Русская Нева" itemprop="image">
+                                </a>
+
+                                <div class="products-item-title">
+
+                                    <a itemprop="url"
+                                       href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva">
+                                        <span itemprop="name">Торт Фисташка с малиной 290г Русская Нева</span>
+                                    </a>
+                                </div>
+                                <div class="products-item-bottom">
+                                    <div class="products-item-price">
+                                        <span itemprop="price">99.90 ₽</span>
+                                        <div class="value" style="display: none;">290г</div>
+                                    </div>
+                                    <div class="products-item-button">
+                                        <a href="#" class="to-basket" data-action="add2cart" data-product="111304"></a>
+                                        <div class="buy-quantity" style="display:none;">
+                                            <input data-product="111304" data-min="0" data-step="1"
+                                                   class="value js-quantity" type="text" value="1">
+                                            <span class="minus js-minus"></span>
+                                            <span class="plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mob-card-buttons">
+                                        <div class="mob-to-basket" data-action="add2cart" data-product="111304">В
+                                            корзину
+                                        </div>
+                                        <div class="mob-favorite" data-action="add2favorite" data-product="111304">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favorite" data-action="add2favorite" data-product="111304"></div>
+                                <div class="quantity">1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-rate-store">
+    <div class="main-rate-store__body">
+        <div class="main-rate-store__title">Оцените работу магазина</div>
+        <p class="main-rate-store__anons">Помогите нам стать лучше. Заполните отзыв о работе магазина после последнего
+            посещения</p>
+        <a href="#" class="main-rate-store__btn">оценить работу</a>
+    </div>
+</div>
+
+<div class="main-subscribe">
+    <div class="wrapper">
+    <div class="main-subscribe__title">Будьте в курсе</div>
+    <p class="main-subscribe__anons">Подпишитесь на рассылку и будьте в курсе выгодных предложений и сезонных поступлений товара</p>
+    <form action="">
+        <input class="main-subscribe__input" type="text" placeholder="Ваш email-адрес">
+        <input class="main-subscribe__submit" type="submit" value="подписаться">
+    </form>
+    <div class="main-subscribe__agree">Нажимая на кнопку, я соглашаюсь на обработку <a href="">персональных данных</a></div>
+    </div>
+</div>
+
+<div class="main-catalog">
+    <div class="wrapper">
+        <div class="main-catalog__header">
+            <div class="main-catalog__title">Другие товары</div>
+            <a class="main-catalog__link-arrow" href="#"></a>
+        </div>
+        <div class="main-catalog__body">
+            <div class="swiper-container swiper-catalog">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div id="item-111304" class="products-item" data-product-container="111304"
+                             itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                            <span itemprop="position" style="display:none"></span>
+                            <link itemprop="url" href="/#item-111304">
+                            <div itemprop="item" itemscope="" itemtype="https://schema.org/Offer">
+                                <a href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva"
+                                   class="products-item-image">
+                                    <img src="https://dobrotsen.ru/thumb/182x182xffffff/upload/resize_cache/iblock/97c/s1b9qmno21kmhe1kejzda5br8kujwdg9/182_182_0/21.-Romshteks-rybnyy-85165.jpg"
+                                         alt="Торт Фисташка с малиной 290г Русская Нева" itemprop="image">
+                                </a>
+
+                                <div class="products-item-title">
+
+                                    <a itemprop="url"
+                                       href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva">
+                                        <span itemprop="name">Торт Фисташка с малиной 290г Русская Нева</span>
+                                    </a>
+                                </div>
+                                <div class="products-item-bottom">
+                                    <div class="products-item-price">
+                                        <span itemprop="price">99.90 ₽</span>
+                                        <div class="value" style="display: none;">290г</div>
+                                    </div>
+                                    <div class="products-item-button">
+                                        <a href="#" class="to-basket" data-action="add2cart" data-product="111304"></a>
+                                        <div class="buy-quantity" style="display:none;">
+                                            <input data-product="111304" data-min="0" data-step="1"
+                                                   class="value js-quantity" type="text" value="1">
+                                            <span class="minus js-minus"></span>
+                                            <span class="plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mob-card-buttons">
+                                        <div class="mob-to-basket" data-action="add2cart" data-product="111304">В
+                                            корзину
+                                        </div>
+                                        <div class="mob-favorite" data-action="add2favorite" data-product="111304">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favorite" data-action="add2favorite" data-product="111304"></div>
+                                <div class="quantity">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="item-111304" class="products-item" data-product-container="111304"
+                             itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                            <span itemprop="position" style="display:none"></span>
+                            <link itemprop="url" href="/#item-111304">
+                            <div itemprop="item" itemscope="" itemtype="https://schema.org/Offer">
+                                <a href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva"
+                                   class="products-item-image">
+                                    <img src="https://dobrotsen.ru/thumb/182x182xffffff/upload/resize_cache/iblock/97c/s1b9qmno21kmhe1kejzda5br8kujwdg9/182_182_0/21.-Romshteks-rybnyy-85165.jpg"
+                                         alt="Торт Фисташка с малиной 290г Русская Нева" itemprop="image">
+                                </a>
+
+                                <div class="products-item-title">
+
+                                    <a itemprop="url"
+                                       href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva">
+                                        <span itemprop="name">Торт Фисташка с малиной 290г Русская Нева</span>
+                                    </a>
+                                </div>
+                                <div class="products-item-bottom">
+                                    <div class="products-item-price">
+                                        <span itemprop="price">99.90 ₽</span>
+                                        <div class="value" style="display: none;">290г</div>
+                                    </div>
+                                    <div class="products-item-button">
+                                        <a href="#" class="to-basket" data-action="add2cart" data-product="111304"></a>
+                                        <div class="buy-quantity" style="display:none;">
+                                            <input data-product="111304" data-min="0" data-step="1"
+                                                   class="value js-quantity" type="text" value="1">
+                                            <span class="minus js-minus"></span>
+                                            <span class="plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mob-card-buttons">
+                                        <div class="mob-to-basket" data-action="add2cart" data-product="111304">В
+                                            корзину
+                                        </div>
+                                        <div class="mob-favorite" data-action="add2favorite" data-product="111304">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favorite" data-action="add2favorite" data-product="111304"></div>
+                                <div class="quantity">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="item-111304" class="products-item" data-product-container="111304"
+                             itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                            <span itemprop="position" style="display:none"></span>
+                            <link itemprop="url" href="/#item-111304">
+                            <div itemprop="item" itemscope="" itemtype="https://schema.org/Offer">
+                                <a href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva"
+                                   class="products-item-image">
+                                    <img src="https://dobrotsen.ru/thumb/182x182xffffff/upload/resize_cache/iblock/97c/s1b9qmno21kmhe1kejzda5br8kujwdg9/182_182_0/21.-Romshteks-rybnyy-85165.jpg"
+                                         alt="Торт Фисташка с малиной 290г Русская Нева" itemprop="image">
+                                </a>
+
+                                <div class="products-item-title">
+
+                                    <a itemprop="url"
+                                       href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva">
+                                        <span itemprop="name">Торт Фисташка с малиной 290г Русская Нева</span>
+                                    </a>
+                                </div>
+                                <div class="products-item-bottom">
+                                    <div class="products-item-price">
+                                        <span itemprop="price">99.90 ₽</span>
+                                        <div class="value" style="display: none;">290г</div>
+                                    </div>
+                                    <div class="products-item-button">
+                                        <a href="#" class="to-basket" data-action="add2cart" data-product="111304"></a>
+                                        <div class="buy-quantity" style="display:none;">
+                                            <input data-product="111304" data-min="0" data-step="1"
+                                                   class="value js-quantity" type="text" value="1">
+                                            <span class="minus js-minus"></span>
+                                            <span class="plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mob-card-buttons">
+                                        <div class="mob-to-basket" data-action="add2cart" data-product="111304">В
+                                            корзину
+                                        </div>
+                                        <div class="mob-favorite" data-action="add2favorite" data-product="111304">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favorite" data-action="add2favorite" data-product="111304"></div>
+                                <div class="quantity">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="item-111304" class="products-item" data-product-container="111304"
+                             itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                            <span itemprop="position" style="display:none"></span>
+                            <link itemprop="url" href="/#item-111304">
+                            <div itemprop="item" itemscope="" itemtype="https://schema.org/Offer">
+                                <a href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva"
+                                   class="products-item-image">
+                                    <img src="https://dobrotsen.ru/thumb/182x182xffffff/upload/resize_cache/iblock/97c/s1b9qmno21kmhe1kejzda5br8kujwdg9/182_182_0/21.-Romshteks-rybnyy-85165.jpg"
+                                         alt="Торт Фисташка с малиной 290г Русская Нева" itemprop="image">
+                                </a>
+
+                                <div class="products-item-title">
+
+                                    <a itemprop="url"
+                                       href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva">
+                                        <span itemprop="name">Торт Фисташка с малиной 290г Русская Нева</span>
+                                    </a>
+                                </div>
+                                <div class="products-item-bottom">
+                                    <div class="products-item-price">
+                                        <span itemprop="price">99.90 ₽</span>
+                                        <div class="value" style="display: none;">290г</div>
+                                    </div>
+                                    <div class="products-item-button">
+                                        <a href="#" class="to-basket" data-action="add2cart" data-product="111304"></a>
+                                        <div class="buy-quantity" style="display:none;">
+                                            <input data-product="111304" data-min="0" data-step="1"
+                                                   class="value js-quantity" type="text" value="1">
+                                            <span class="minus js-minus"></span>
+                                            <span class="plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mob-card-buttons">
+                                        <div class="mob-to-basket" data-action="add2cart" data-product="111304">В
+                                            корзину
+                                        </div>
+                                        <div class="mob-favorite" data-action="add2favorite" data-product="111304">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favorite" data-action="add2favorite" data-product="111304"></div>
+                                <div class="quantity">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="item-111304" class="products-item" data-product-container="111304"
+                             itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                            <span itemprop="position" style="display:none"></span>
+                            <link itemprop="url" href="/#item-111304">
+                            <div itemprop="item" itemscope="" itemtype="https://schema.org/Offer">
+                                <a href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva"
+                                   class="products-item-image">
+                                    <img src="https://dobrotsen.ru/thumb/182x182xffffff/upload/resize_cache/iblock/97c/s1b9qmno21kmhe1kejzda5br8kujwdg9/182_182_0/21.-Romshteks-rybnyy-85165.jpg"
+                                         alt="Торт Фисташка с малиной 290г Русская Нева" itemprop="image">
+                                </a>
+
+                                <div class="products-item-title">
+
+                                    <a itemprop="url"
+                                       href="/catalog/khleb-vypechka-sneki/torty-pirozhnoe-keksy/111304-tort-fistashka-s-malinoy-290g-russkaya-neva">
+                                        <span itemprop="name">Торт Фисташка с малиной 290г Русская Нева</span>
+                                    </a>
+                                </div>
+                                <div class="products-item-bottom">
+                                    <div class="products-item-price">
+                                        <span itemprop="price">99.90 ₽</span>
+                                        <div class="value" style="display: none;">290г</div>
+                                    </div>
+                                    <div class="products-item-button">
+                                        <a href="#" class="to-basket" data-action="add2cart" data-product="111304"></a>
+                                        <div class="buy-quantity" style="display:none;">
+                                            <input data-product="111304" data-min="0" data-step="1"
+                                                   class="value js-quantity" type="text" value="1">
+                                            <span class="minus js-minus"></span>
+                                            <span class="plus js-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mob-card-buttons">
+                                        <div class="mob-to-basket" data-action="add2cart" data-product="111304">В
+                                            корзину
+                                        </div>
+                                        <div class="mob-favorite" data-action="add2favorite" data-product="111304">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="favorite" data-action="add2favorite" data-product="111304"></div>
+                                <div class="quantity">1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-order-entity">
+    <div class="main-order-entity__body">
+        <div class="main-order-entity__title">Заказывайте товары
+            как юридическое лицо</div>
+        <p class="main-order-entity__anons">Регистрируйтесь как юридическое лицо и оплачивайте товары от проверенных поставщиков по безналичному расчету</p>
+        <a href="#" class="main-order-entity__btn">Зарегистрироваться как B2B</a>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+
+    </div>
+</footer>
+<script src="https://dobrotsen.ru/local/templates/main_new/js/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/main-page.min.js"></script>
 </body>
 </html>
