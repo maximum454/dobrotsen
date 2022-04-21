@@ -8,12 +8,17 @@
       content: '';
       position: absolute;
       bottom: -20px;
-      left: 280px;
+      left: 282px;
       background-image: url("../img/main-order-entity-bg.svg");
       background-repeat: no-repeat;
       width: 68px;
       height: 200px;
+      pointer-events: none;
     }
+  }
+  &__content{
+    position: relative;
+    z-index: 10;
   }
   &__title{
     font-weight: 700;
@@ -27,7 +32,7 @@
     font-size: 12px;
     line-height: 16px;
     color: #FFFFFF;
-    margin: 0 0 20px;
+    margin: 0 0 6px;
   }
   &__btn{
     line-height: 42px;
@@ -46,5 +51,12 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #333333;
+  }
+  @include r(374){
+    &__body{
+      &:before{
+        left: 235px;
+      }
+    }
   }
 }

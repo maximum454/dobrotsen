@@ -8,12 +8,17 @@
       content: '';
       position: absolute;
       top: -32px;
-      left: 258px;
+      left: 210px;
       background-image: url("../img/main-rate-store-bg.svg");
       background-repeat: no-repeat;
       width: 143px;
       height: 220px;
+      pointer-events: none;
     }
+  }
+  &__content{
+    position: relative;
+    z-index: 10;
   }
   &__title{
     font-weight: 700;
@@ -46,5 +51,12 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #333333;
+  }
+  @include r(374){
+    &__body{
+      &:before{
+        left: 160px;
+      }
+    }
   }
 }

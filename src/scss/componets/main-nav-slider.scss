@@ -1,0 +1,17 @@
+.main-nav-slider{
+	margin: 20px 0;
+	&__link{
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 20px;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: #333333;
+		text-decoration: none;
+	}
+	.swiper-slide{
+		width: auto;
+		border-right: 1px solid #BDBDBD;
+		padding-right: 7px;
+	}
+}

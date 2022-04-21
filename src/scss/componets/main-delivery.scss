@@ -1,0 +1,25 @@
+.main-delivery{
+	margin-bottom: 24px;
+	&__btn{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		width: 100%;
+		background-color: transparent;
+		border: 1px solid #EB292F;
+		box-sizing: border-box;
+		border-radius: 2px;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 20px;
+		text-align: center;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: #EB292F;
+		padding: 10px;
+		&--select{
+			color: #333;
+		}
+	}
+}

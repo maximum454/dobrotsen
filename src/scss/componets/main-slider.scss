@@ -1,0 +1,24 @@
+.main-slider{
+	margin-bottom: 32px;
+	img{
+		display: block;
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+	.swiper-pagination{
+		bottom: 0;
+		&-bullet{
+			background-color: #898787;
+			width: 5px;
+			height: 5px;
+			border-radius: 15px;
+			transition: width .3s ease;
+			&-active{
+				background-color: #EB292F;
+				width: 15px;
+				transition: width .3s ease;
+			}
+		}
+	}
+}
