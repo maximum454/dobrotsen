@@ -28,12 +28,12 @@
     border-radius: 4px;
     text-align: center;
     position: relative;
-    padding: 13px 15px;
+
   }
   &__img{
     width: 100%;
     height: 100%;
-    margin: 0 0 14px;
+    margin: 0;
   }
   &__img img{
     display: block;
@@ -43,8 +43,11 @@
     object-fit: cover;
   }
   &__txt{
+    bottom: 0;
     width: 100%;
-    height: 100%;
+    position: absolute;
+    padding: 13px 15px;
+    z-index: 10;
   }
   &__name{
     font-weight: 700;
