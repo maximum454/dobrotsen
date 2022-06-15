@@ -1,9 +1,9 @@
-const swiperNav = new Swiper('.swiper-nav', {
+const swiperNavMobile = new Swiper('.swiper-nav', {
     slidesPerView: "auto",
     spaceBetween: 10,
 })
 
-const swiperMain = new Swiper('.swiper-main', {
+const swiperMainMobile = new Swiper('.swiper-main', {
     slidesPerView: 1,
     spaceBetween: 0,
     pagination: {
@@ -12,17 +12,17 @@ const swiperMain = new Swiper('.swiper-main', {
     },
 })
 
-const swiperBrand = new Swiper('.swiper-brand', {
+const swiperBrandMobile = new Swiper('.swiper-brand', {
     slidesPerView: 1.5,
     spaceBetween: 16,
 })
 
-const swiperRecipes = new Swiper('.swiper-recipes', {
+const swiperRecipesMobile = new Swiper('.swiper-recipes', {
     slidesPerView: 1.5,
     spaceBetween: 16,
 })
 
-const swiperCatalog = new Swiper('.swiper-catalog', {
+const swiperCatalogMobile = new Swiper('.swiper-catalog', {
     slidesPerView: 2.2,
     spaceBetween: 16,
 })
